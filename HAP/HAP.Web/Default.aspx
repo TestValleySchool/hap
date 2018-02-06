@@ -7,6 +7,25 @@
     <script src="Scripts/jquery.mousewheel.js"></script>
     <script src="Scripts/jquery.event.move.js"></script>
     <script src="Scripts/jquery.event.swipe.js"></script>
+    <!-- Piwik -->
+    <script type="text/javascript">
+        var _paq = _paq || [];
+        _paq.push(['disableCookies']);
+        _paq.push(["setDomains", ["*.intranet.testvalley.hants.sch.uk", "*.intranet.testvalley.hants.sch.uk"]]);
+        _paq.push(["setCustomVariable", "1", "user", "<%= HttpUtility.JavaScriptStringEncode(System.Web.HttpContext.Current.User.Identity.Name) %>", "visit"]);
+        _paq.push(["setUserId", "<%= HttpUtility.JavaScriptStringEncode(System.Web.HttpContext.Current.User.Identity.Name) %>"]);
+        _paq.push(['trackPageView']);
+        _paq.push(['enableLinkTracking']);
+        (function () {
+            var u = "//www.testvalley.hants.sch.uk/stat/";
+            _paq.push(['setTrackerUrl', u + 'piwik.php']);
+            _paq.push(['setSiteId', 2]);
+            var d = document, g = d.createElement('script'), s = d.getElementsByTagName('script')[0];
+            g.type = 'text/javascript'; g.async = true; g.defer = true; g.src = u + 'piwik.js'; s.parentNode.insertBefore(g, s);
+        })();
+    </script>
+    <noscript><p><img src="//www.testvalley.hants.sch.uk/stat/piwik.php?idsite=2" style="border:0;" alt="" /></p></noscript>
+    <!-- End Piwik Code -->
 </asp:Content>
 <asp:Content runat="server" ContentPlaceHolderID="viewport"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" /></asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="body" runat="server">
@@ -17,7 +36,7 @@
             <hap:version runat="server" />
             <div id="title">
                 <h1><a href="http://hap.codeplex.com" target="_blank"><hap:LocalResource StringPath="homeaccessplus" runat="server" /></a></h1>
-                <h2>Access your School from Home</h2>
+                <h2>Access your school files from home</h2>
             </div>
             <div id="HomeButtonsHeader">
                 <asp:Repeater ID="homepageheaders" runat="server">

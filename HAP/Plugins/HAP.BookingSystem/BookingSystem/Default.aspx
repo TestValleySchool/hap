@@ -1,10 +1,50 @@
 <%@ Page Title="" Language="C#" MasterPageFile="~/masterpage.master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="HAP.Web.BookingSystem._new" %>
 <asp:Content ContentPlaceHolderID="head" runat="server">
-    <style>
+    <!--<style>
         #bookingday #resources, .col a, .col .share, #bookingday .head h1 { width: <%=Math.Round(100.00 / (config.BookingSystem.Lessons.Count + 1), 1)%>%; }
         #bookingday #resources { min-height: <%=(60 * (rez.Count + 1)) - 2 %>px; }
         #bookingday .body .col, #bookingday #resources div { height: <%=Math.Round(100.00 / (rez.Count + 1), 1) %>%; }
+    </style>-->
+    <style>
+        #bookingday #resources, .col a, .col .share, #bookingday .head h1 { width: <%=Math.Round(100.00 / (config.BookingSystem.Lessons.Count + 1), 1)%>%; }
+        #bookingday #resources { min-height: <%= Math.Round(116.00 * rez.Count, 1) %>px; }
+        #bookingday .body .col, #bookingday #resources div { height: 115px; min-height:115px; /* height: <%=Math.Round(100.00 / (rez.Count + 1), 1) %>%; */ }
     </style>
+    <!-- TVS Stats -->
+		<script type="text/javascript">
+  var _paq = _paq || [];
+  _paq.push(['disableCookies']);
+  _paq.push(["setDomains", ["*.intranet.testvalley.hants.sch.uk","*.intranet.testvalley.hants.sch.uk"]]);
+  _paq.push(["setCustomVariable", "1", "user", "<%= HttpUtility.JavaScriptStringEncode(System.Web.HttpContext.Current.User.Identity.Name) %>", "visit"]);
+  _paq.push(["setUserId", "<%= HttpUtility.JavaScriptStringEncode(System.Web.HttpContext.Current.User.Identity.Name) %>"]);
+
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="//www.testvalley.hants.sch.uk/stat/";
+    _paq.push(['setTrackerUrl', u+'piwik.php']);
+    _paq.push(['setSiteId', 2]);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+  })();
+  window.onhashchange = function() {
+	_paq.push(['trackPageView', location.pathname + location.search  + location.hash]);
+  }
+</script>
+    <!-- end TVS Stats -->
+<!-- TVS make lunchtime somewhat dimmer -->
+<hap:CompressJS runat="server">
+<script type="text/javascript">
+	//window.setInterval( function() { $(function() {
+	$(document).ajaxSuccess(function() {
+		$('.col > a:nth-child(6)').each(function() {
+			$(this).addClass('tvs-lunchtime');
+		});
+	});
+	// }, 1000 );
+</script>
+</hap:CompressJS>
+<!-- end TVS make lunchtime somewhat dimmer -->
 </asp:Content>
 <asp:Content ContentPlaceHolderID="title" runat="server"><asp:HyperLink runat="server" NavigateUrl="~/BookingSystem/"><hap:LocalResource runat="server" StringPath="bookingsystem/bookingsystem" /></asp:HyperLink></asp:Content>
 <asp:Content runat="server" ContentPlaceHolderID="viewport"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" /></asp:Content>

@@ -5,10 +5,10 @@
 
 html, body { padding: 0; margin: 0; }
 
-.tile-color, #datepicker .ui-datepicker-header, .fc-content .ui-widget-header { background: #0060a6; border-color: #0060a6; }
-.tile-border-color, #datepicker .ui-datepicker { border-color: #0060a6; }
-.tile-color-font { color: #0060a6; }
-.tiles > a, .tiles a.tile, #hapHeaderMore a { background-color: #0060a6; color: #fff; border-color: #0060a6; }
+.tile-color, #datepicker .ui-datepicker-header, .fc-content .ui-widget-header { background: #008357; border-color: #008357; }
+.tile-border-color, #datepicker .ui-datepicker { border-color: #008357; }
+.tile-color-font { color: #008357; }
+.tiles > a, .tiles a.tile, #hapHeaderMore a { background-color: #008357; color: #fff; border-color: #008357; }
 .tiles > a:hover, .tiles a.tile:hover, #hapHeaderMore a:hover { background-color: #3286C1; border-color: #3286C1; }
 .tiles > a:active, .tiles a.tile:active, #hapHeaderMore a:active { background-color: #004577; border-color: #004577; }
 
@@ -62,8 +62,8 @@ input[type=button]:focus, input[type=submit]:focus, button:focus { outline: #edc
 #loginform .base { padding-top: 60px; padding-left: 60px; padding-bottom: 0; }
 #loginform .copyright { position: absolute; right: 40px; bottom: 40px; }
 
-#loginform h1, #title h1 { color: #0060a6; font-size: 5em; margin: 0; font-weight: normal; padding-top: 10%; }
-#loginform h1 a, #title h1 a { color: #0060a6; text-decoration: none; }
+#loginform h1, #title h1 { color: #008357; font-size: 5em; margin: 0; font-weight: normal; padding-top: 10%; }
+#loginform h1 a, #title h1 a { color: #008357; text-decoration: none; }
 #loginform h2, #title h2 { margin: 0; padding: 0 0 40px 60px; font-size: 2.5em; font-weight: normal; }
 
 #title h1, #title h2 { margin-left: 10%; }
@@ -79,9 +79,9 @@ input[type=button]:focus, input[type=submit]:focus, button:focus { outline: #edc
 #HomeButtonsHeader h1.active { font-weight: bold; }
 #HomeButtonsHeader h1 a { text-decoration: none; color: #666; }
 #HomeButtonsHeader h1 a:hover { color: #222; }
-#HomeButtonsHeader h1.active a { color: #0060a6; }
+#HomeButtonsHeader h1.active a { color: #008357; }
 #HomeButtonsHeader { clear: both; padding-left: 20px; }
-#leftscroll, #rightscoll { position: absolute; top: 0; bottom: 0; font-size: 20px; width: 20px; font-family: #0060a6; background: #f3f3f3; font-family: MSHPIconsRegular; text-decoration: none; }
+#leftscroll, #rightscoll { position: absolute; top: 0; bottom: 0; font-size: 20px; width: 20px; font-family: #008357; background: #f3f3f3; font-family: MSHPIconsRegular; text-decoration: none; }
 #rightscoll { right: 0; }
 #leftscroll { left: 0; }
 
@@ -146,15 +146,15 @@ th span { float: right; }
 
 #hapHeader { position: fixed; top: 0; left: 0; right: 0; height: 40px; padding: 0 10px; line-height: 40px; z-index: 99; font-family: '☺SegoeLight', 'Segoe UI Light', 'Segoe UI', Tahoma; font-size: 16px; color: #fff; white-space: nowrap; overflow: hidden;  }
     #hapHeader a { padding: 0 10px; vertical-align: top; text-decoration: none; display: inline-block; height: 40px; line-height: 40px; color: #fff; }
-    #hapHeader a:hover { background-color: #3286C1; }
-    #hapHeader a:active { background-color: #004577; }
+    #hapHeader a:hover { background-color: #009133; }
+    #hapHeader a:active { background-color: #4c7a36; }
     #hapHeader #hapTitle { float: left; font-size: 20px; height: 40px; line-height: 40px; }
-        #hapHeader #hapTitle:hover { background-color: #00508a; }
+        #hapHeader #hapTitle:hover { background-color: #008357; }
         #hapHeader #hapTitle a { background-image: url(../images/icons/metro/hap-logo-20.png); background-repeat: no-repeat; background-position: 10px center; padding-left: 34px; }
         #hapHeader #hapTitle #hapTitleMore { font-family: glyphicons; font-size: 12px; background-image: none; padding: 0 5px; }
-#hapUserTitle { position: fixed; right: 0; height: 40px; line-height: 40px; top: 0; z-index: 99; background-color: #0060a6; border-right: solid 10px #0060a6; color: #fff; text-decoration: none; padding: 0 10px; font-size:16px; }
-#hapUserTitle:hover { background-color: #3286C1; text-decoration: none; }
-#hapUserTitle:active { background-color: #004577; }
+#hapUserTitle { position: fixed; right: 0; height: 40px; line-height: 40px; top: 0; z-index: 99; background-color: #008357; border-right: solid 10px #008357; color: #fff; text-decoration: none; padding: 0 10px; font-size:16px; }
+#hapUserTitle:hover { background-color: #317A27; text-decoration: none; }
+#hapUserTitle:active { background-color: #258C18; }
 .hapmenu { position: fixed; top: 40px; background: #fff; border-style: solid; border-width: 2px; border-top-width: 0; z-index: 301; font-size: 16px; }
 .hapmenu a { display: block; background: #fff; color: #000; height: 30px; line-height: 30px; text-decoration: none; padding: 5px 20px; }
     .hapmenu a:hover { background-color: #f3f3f3; }
@@ -182,7 +182,7 @@ span.hapswitch.on::after { content: 'on' }
 .hapswitch.on span { background: #66B3FF; }
 .hapswitch.on i { left: 42px; }
 
-#HomeButtons .selected { border: solid 2px #0060a6; background-image: url(../images/triangle.png); background-repeat: no-repeat; background-position: right top; margin: 1px 1px -2px -2px }
+#HomeButtons .selected { border: solid 2px #008357; background-image: url(../images/triangle.png); background-repeat: no-repeat; background-position: right top; margin: 1px 1px -2px -2px }
 #contextbar { background: #000; height: 0; position: fixed; bottom: 0; left: 0; right: 0; color: #fff; overflow: hidden; -moz-transition: height ease-in-out 0.2s; -o-transition: height ease-in-out 0.2s; -webkit-transition: inherit; transition: height ease-in-out 0.2s; }
 #contextbar.show { height: 80px; padding: 20px; }
 #contextbar a { color: #555; display: none; padding-top: 60px; text-decoration: none; cursor: default; background: transparent url(../images/contextbar.png) no-repeat; width: 64px; text-align: center; }
@@ -224,7 +224,7 @@ span.hapswitch.on::after { content: 'on' }
 #hapLoader.go .dot_3 { opacity: 0; animation: loading 5s ease-in-out .6s infinite; -ms-animation: loadingie 5s ease-in-out .6s infinite; }
 #hapLoader.go .dot_4 { opacity: 0; animation: loading 5s ease-in-out .9s infinite; -ms-animation: loadingie 5s ease-in-out .9s infinite; }
 #hapLoader.go .dot_5 { opacity: 0; animation: loading 5s ease-in-out .12s infinite; -ms-animation: loadingie 5s ease-in-out .12s infinite; }
-.fc .ui-widget-header { background: #0060a6; }
+.fc .ui-widget-header { background: #008357; }
 @keyframes loading { from { margin-left: -50%; opacity: 0; } 50% { margin-left: 0; opacity: 1; } to { margin-left: 50%; opacity: 0; } }
 @keyframes loadingie { from { margin-left: 0%; opacity: 0; } 50% { margin-left: 50%; opacity: 1; } to { margin-left: 100%; opacity: 0; } }
 
