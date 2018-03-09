@@ -584,7 +584,7 @@
 						uploads.pop(uitem);
 					}
 				};
-				this.xhr.setRequestHeader('X_FILENAME', this.FileName);
+				this.xhr.setRequestHeader('X-Filename', this.FileName);
 				this.xhr.send(this.File);
 			};
 			this.onProgress = function (e) {
