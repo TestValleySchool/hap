@@ -18,7 +18,7 @@ body.bookingdisplay, body.bookingdisplay form { padding: 0; margin: 0; width: 10
 #datepicker { z-index: 200; top: 97px; left: 0; }
 #bookingday { position: absolute; top: 67px; left: 0; right: 0; bottom: 0; background: #fff; }
 
-#bookingday .head #picker { border: 0; border-radius: 0; width: 100%; height: 30px; line-height: 30px; font-size: 110%; background: #0060a6; color: #fff; padding: 0; font-size: 18px; }
+#bookingday .head #picker { border: 0; border-radius: 0; width: 100%; height: 30px; line-height: 30px; font-size: 110%; background: #008357; color: #fff; padding: 0; font-size: 16px; }
 #bookingday .head #picker:hover { background-color: #3286C1; }
 #bookingday .head #picker:active { background-color: #004577; }
 #bookingday .body { height: 100%; background: #fff; }
@@ -28,9 +28,9 @@ body.bookingdisplay, body.bookingdisplay form { padding: 0; margin: 0; width: 10
 #bookingday #resources { color: #fff; padding: 0; width: 156px; float: left; height: 100%; }
 
 
-#bookingday .body a, #bookingday .body .share, #bookingday h1 { display: block; position: relative; z-index: 10; margin: 2px 0 0 2px; float: left; font-size: 12px; min-width: 134px; padding: 10px 10px; min-height: 38px; height: 100%; background-color: #eee; text-decoration: none; color: #666; cursor: default; white-space: nowrap; text-overflow: ellipsis; }
+#bookingday .body a, #bookingday .body .share, #bookingday h1 { display: block; position: relative; z-index: 10; margin: 2px 0 0 2px; float: left; font-size: 16px; min-width: 134px; padding: 10px 10px; min-height: 38px; height: 100%; background-color: #eee; text-decoration: none; color: #666; cursor: default; white-space: nowrap; text-overflow: ellipsis; }
 #bookingday .body a.admin, #bookingday .body a.bookie, #bookingday .body a.free { cursor: pointer; }
-#bookingday .body a span { display: block; font-size: 10px; line-height: 12px; }
+#bookingday .body a span { display: block; font-size: 13px; line-height: 12px; }
 #bookingday .body a span.state { position: absolute; float: right; top: 0; right: 0; line-height: 16px; height: 14px; overflow: hidden; }
 #bookingday .body a span.state span { float: right; display: block; line-height: 16px; height: 14px; width: 0; text-align: right; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; transition: all 0.3s ease-in-out; -moz-transition: all 0.3s ease-in-out; -webkit-transition: all 0.3s ease-in-out; -o-transition: all 0.3s ease-in-out; }
 #bookingday .body a.admin:hover span.state span, #bookingday .body a.bookie:hover span.state span, #bookingday .body a.free:hover span.state span { width: 60px; transition: width 0.3s ease-in-out; -moz-transition: width 0.3s ease-in-out; -webkit-transition: width 0.3s; -o-transition: width 0.3s; }
@@ -49,11 +49,11 @@ body.bookingdisplay, body.bookingdisplay form { padding: 0; margin: 0; width: 10
 #bookingday .body a span i.notes { background: transparent url(../images/ui-icons_454545_256x240.png) no-repeat -131px -99px!important; }
 #bookingday .body #time { width: 2px; background: #0ca600; background-color: rgba(12, 166, 0, 0.25); position: absolute; top: 30px; left: 100%; z-index: 90; margin-left: -2px; }
 
-#bookingday .head, #bookingday .body.head .col div { height: 30px!important; line-height: 30px!important; background: #0060a6!important; color: #fff; min-height: 30px!important; }
+#bookingday .head, #bookingday .body.head .col div { height: 30px!important; line-height: 30px!important; background: #008357!important; color: #fff; min-height: 30px!important; }
 #bookingday h1 { background: transparent; text-align: center; line-height: 30px!important; height: 30px!important; color: #fff; padding-top: 0; padding-bottom: 0; font-weight: normal; font-size: 15px; }
-#bookingday #resources div { background: #0060a6; text-align: center; line-height: 60px; }
+#bookingday #resources div { background: #008357; text-align: center; line-height: 60px; }
 
-#bookingday #resources a { background-color: transparent; display: inline; margin: 0; float: none; position: static; font-size: 14px; width: auto; padding: 0; height: auto; line-height: normal; color: #fff; cursor: pointer;  }
+#bookingday #resources a { background-color: transparent; display: inline; margin: 0; float: none; position: static; font-size: 12px; width: auto; padding: 0; height: auto; line-height: normal; color: #fff; cursor: pointer;  }
 #datepicker .ui-corner-all { border-radius: 0; }
 #searchresults .date { width: 100px; display:inline-block; }
 #searchresults span { min-width: 60px; display: inline-block; }
@@ -108,4 +108,53 @@ a.fc-event.free:hover {
     box-shadow: 0 0 7px black;
     z-index: 200;
     width: 200px!important;
+}
+/* TVS EDITS */
+
+#bookingday .body a.free {
+    background-color: #92ff75;
+}
+
+#Rm_2 > a.free, #Reception_Meeting_Rm > a.free, #Admin_Quiet_Rm_-_Batcave > a.free {
+    background-color: #C7FCCF !important;
+}
+
+#Silver_Minibus > a.free, #White_Minibus > a.free {
+	background-color: #E3FFE7 !important;
+}
+
+div#Rm_2.col, div#Minibus.col {
+  border-top: 3px solid #FFA42E;
+}
+
+a.static.tvs-pshe-blocker {
+	background-color: #FC8B8B !important;	
+}
+
+
+#bookingday .body a.tvs-lunchtime-block.free {
+	background-color: #DEFFE3;
+}
+
+#Rm_2 > a.free.tvs-lunchtime-block, #Reception_Meeting_Rm > a.free.tvs-lunchtime-block, #Admin_Quiet_Rm_-_Batcave > a.free.tvs-lunchtime-block {
+    background-color: #EDFFEF !important;
+}
+#Silver_Minibus > a.free.tvs-lunchtime-block, #White_Minibus > a.free.tvs-lunchtime-block {
+	background-color: #FAFFFB !important;
+}
+
+.tvs-lunchtime {
+	background-color:  #deffe3 !important;
+}
+
+.tvs-lunchtime.booked {
+	background-color: #eee !important;
+}
+
+label[for="bflheadphones"] {
+	display: none !important;
+}
+
+span[data-for="bflheadphones"] {
+	display:none;
 }

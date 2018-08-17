@@ -6,7 +6,8 @@
         #bookingday .body .col, #bookingday #resources div { height: <%=Math.Round(100.00 / (rez.Count + 1), 1) %>%; }
     </style>-->
     <style>
-        #bookingday #resources, .col a, .col .share, #bookingday .head h1 { width: <%=Math.Round(100.00 / (config.BookingSystem.Lessons.Count + 1), 1)%>%; }
+        /*#bookingday #resources, .col a, .col .share, #bookingday .head h1 { width: <%=Math.Round(100.00 / (config.BookingSystem.Lessons.Count + 1), 1)%>%; }*/
+        #bookingday #resources, .col a, .col .share, #bookingday .head h1 { width: 6.1%; }
         #bookingday #resources { min-height: <%= Math.Round(116.00 * rez.Count, 1) %>px; }
         #bookingday .body .col, #bookingday #resources div { height: 115px; min-height:115px; /* height: <%=Math.Round(100.00 / (rez.Count + 1), 1) %>%; */ }
     </style>
@@ -36,8 +37,8 @@
 <hap:CompressJS runat="server">
 <script type="text/javascript">
 	//window.setInterval( function() { $(function() {
-	$(document).ajaxSuccess(function() {
-		$('.col > a:nth-child(6)').each(function() {
+    $(document).ajaxSuccess(function () {
+		$('.col > a:nth-child(6), .col > a:nth-child(1),.col > a:nth-child(6), .col > a:nth-child(9),.col > a:nth-child(6), .col > a:nth-child(10)').each(function() {
 			$(this).addClass('tvs-lunchtime');
 		});
 	});
@@ -368,7 +369,7 @@
 		            if (user.isBSAdmin) $("#val").html("This Week is a Week " + data[1]);
 		            else {
 		                if (data[0] >= 0 ) {
-		                    $("#val").html("You have " + data[0] + " bookings available to use this week. This Week is a Week " + data[1]);
+		                    $("#val").html("You have " + data[0] + " bookings available to use this week.");
 		                    availbookings = data[0];
 		                } else {
 		                    $("#val").html("This Week is a Week " + data[1]);
